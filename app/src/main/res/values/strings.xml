@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SetIndiaTask</string>
+    <string name="translate_message">Text to be translated</string>
+    <string name="eng_text">English</string>
+    <string name="chn_text">中文</string>
+    <string name="hin_text">हिंदी</string>
+    <string name="appear_hear">See translated text here</string>
 </resources>

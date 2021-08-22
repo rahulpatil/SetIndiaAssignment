@@ -7,12 +7,68 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/translate_message"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/to_be_translated"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:maxLines="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/eng_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/eng_text"
+        app:layout_constraintEnd_toStartOf="@+id/to_be_translated"
+        app:layout_constraintTop_toBottomOf="@+id/to_be_translated"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/chn_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/chn_text"
+        app:layout_constraintLeft_toRightOf="@+id/eng_button"
+        app:layout_constraintTop_toBottomOf="@+id/to_be_translated"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/hi_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/hin_text"
+        app:layout_constraintLeft_toRightOf="@+id/chn_button"
+        app:layout_constraintTop_toBottomOf="@+id/to_be_translated"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/translated_text"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:inputType="none"
+        android:layout_height="wrap_content"
+        android:hint="@string/appear_hear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
