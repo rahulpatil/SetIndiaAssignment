@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SetIndiaTask</string>
+    <string name="hello_world">नमस्ते दुनिया</string>
+    <string name="translate_message">पाठ का अनुवाद किया जाना है</string>
+    <string name="eng_text">English</string>
+    <string name="chn_text">中文</string>
+    <string name="hin_text">हिंदी</string>
+    <string name="appear_hear">अनुवादित पाठ यहाँ देखें</string>
+</resources>
