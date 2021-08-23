@@ -44,7 +44,7 @@ class RemoteRepository {
 
                     val columns: List<String> = line.split(",")
 
-                    languageMap[columns[0]] = columns.subList(1, columns.size)
+                    languageMap[columns[0]] = columns
 
 
                 } while (true)
