@@ -1,12 +1,11 @@
 package com.setindia.task
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.setindia.task.repository.TAG
 import com.setindia.task.viewmodel.LanguageViewModel
+import kotlinx.android.synthetic.main.activity_main.*
 
 const val LANGUAGE_CODE_ENG = "en_IN"
 const val LANGUAGE_CODE_CHN = "zh_CN"
@@ -34,7 +33,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun translateAndSetText(languageCode: String) {
         val languageCodeIndex = languageViewModel.getLanguageIndex(languageCode)
-        Log.d(TAG, "The index of selected laguage is $languageCode")
+        translated_text.setText(
+            languageViewModel.getTranslatedString(
+                to_be_translated.text.toString() /*ID of String resource*/,
+                languageCodeIndex
+            )
+        )
     }
 
     fun setChinese(view: View) {

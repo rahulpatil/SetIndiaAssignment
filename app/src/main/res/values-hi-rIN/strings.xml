@@ -6,4 +6,6 @@
     <string name="chn_text">中文</string>
     <string name="hin_text">हिंदी</string>
     <string name="appear_hear">अनुवादित पाठ यहाँ देखें</string>
+    <string name="exercise_daily">रोजाना व्यायाम करें</string>
+
 </resources>
