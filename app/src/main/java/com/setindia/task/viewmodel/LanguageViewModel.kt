@@ -18,7 +18,6 @@ class LanguageViewModel : ViewModel() {
     fun getLanguageMap() {
         thread(start = true) {
             languageMap = RemoteRepository.downloadTranslatorFile()
-            Log.d("Rahul", "nap is $languageMap")
         }
     }
 
